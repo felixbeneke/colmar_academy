@@ -1,8 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    color: #4a4a4a;
+}
+h2 {
+    font-size: 2.5em;
+    font-weight: 900;
+}
+
+p {
+    font-weight: 300;
+}
+
+h3.courseHeading {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+h4.courseHeading {
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+p.courseDescription {
+    font-weight: 300;
+    margin-bottom: 8px;
 }
 
 nav#desktop {
@@ -203,7 +229,7 @@ footer li {
     text-align: center;
 }
 
-@media only screen and (max-width: 635px) {
+@media only screen and (max-width: 960px) {
     nav#desktop {
         display: none;
     }
@@ -219,7 +245,7 @@ footer li {
     div.information {
         padding: 32px 16px;
     }
-    div.spotlight {
+    div.news .spotlight {
         display: none;
     }
     div.topics {
@@ -234,10 +260,74 @@ footer li {
     img.image {
         height: 100%;
     }
+    img.desktop {
+        display: none;
+    }
+    .textContainer {
+        margin: 16px;
+    }
+    div.selected {
+        background-color: white;
+    }
+    div.startLearning {
+        background-color: white;
+        border-top: rgb(202, 202, 202) 1px solid;
+        padding: 0;
+    }
+    .startLearning h2 {
+        margin-top: 32px;
+    }
+    div.courses {
+        padding: 0px;
+    }
+    div.courseElement {
+        width: 100%;
+        margin: 8px 16px;
+    }
+    .coursePic {
+        display: none;
+    }
+    h4.courseHeading {
+        display: none;
+    }
+    .courseDescription {
+        display: none;
+    }
+    h3.courseHeading {
+        background-color: rgb(212, 212, 212);
+        padding: 16px 16px 24px 16px;
+        color: rgb(87, 87, 87);
+    }
+    div.courseText {
+        margin: 0;
+        padding: 0;
+    }
+    div.thesis {
+        width: 100%;
+    }
+    div.thesisTopics {
+        display: none;
+    }
+    div.spotlight,.video video {
+        width: 100%;
+        height: auto;
+    }
+    .lownav {
+        display: none;
+    }
+    div.spotlightQuote {
+        display: none;
+    }
+    footer {
+        border: none;
+    }
 }
 
-@media only screen and (min-width: 635px) {
+@media only screen and (min-width: 960px) {
     nav#mobile {
+        display: none;
+    }
+    img.mobile {
         display: none;
     }
 }
