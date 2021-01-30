@@ -86,6 +86,9 @@ p.person {
 div.topics {
     width: 40%;
     margin: 32px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .topic {
@@ -102,9 +105,30 @@ div.topics {
     margin-top: 16px;
 }
 
+h3.heading {
+    margin-bottom: 8px;
+}
+
+p.date {
+    margin-bottom: 8px;
+}
+p.readmore {
+    color: rgb(38, 172, 255);
+}
+
 .imageContainer {
     width: 35%;
     height: auto;
+}
+
+div.startLearning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 32px 72px;
+    background-color: lightgray;
+    align-items: center;
 }
 
 img.image {
@@ -121,4 +145,26 @@ img.image {
 
 div.selected {
     background-color: lightgray;
+}
+
+div.courseElement {
+    background-color: white;
+    margin: 16px;
+    width: 300px;
+}
+div.courseText {
+    padding: 24px 16px;
+}
+
+div.courses {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 32px 72px;
+    flex-wrap: wrap;
+}
+
+.courseElement img {
+    height: auto;
+    width: 100%;
 }
