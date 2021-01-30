@@ -60,3 +60,50 @@ button.button {
 .information p {
     margin-bottom: 20px;
 }
+
+.news {
+    display: flex;
+}
+div.spotlight {
+    margin: 32px 24px;
+    width: 60%;
+}
+
+div.topics {
+    width: 40%;
+    margin: 32px 0;
+}
+
+.topic {
+    width: 100%;
+    display: flex;
+    padding: 16px 16px;
+}
+
+img.information-main {
+    width: 100%;
+}
+
+div.topics {
+    margin-top: 16px;
+}
+
+.imageContainer {
+    width: 35%;
+}
+
+img.image {
+    width: 100%;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    justify-content: center;
+    margin-left: 24px;
+}
+
+div.selected {
+    background-color: lightgray;
+}
