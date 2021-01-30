@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="desktop">
             <div class="logo">
                 <img src="./resources/images/ic-logo.svg" alt="colmar academy logo">
                 <h1 class="colmar-academy">Colmar Academy</h1>
@@ -19,6 +19,12 @@
                 <li>Our companies</li>
                 <li class="last">Sign in</li>
             </ul>
+        </nav>
+        <nav id="mobile">
+            <img src="./resources/images/ic-logo.svg" alt="">
+            <img src="./resources/images/ic-on-campus.svg" alt="">
+            <img src="./resources/images/ic-online.svg" alt="">
+            <img src="./resources/images/ic-login.svg" alt="">
         </nav>
     </header>
     <main>
@@ -126,6 +132,45 @@
                 </div>
             </div>
         </div>
+        <h2 class="thesisHeading">Thesis exhibit</h2>
+        <div class="thesis">
+            <div class="spotlight video">
+                <video autoplay loop src="./resources/videos/thesis.mp4"></video>
+                <div class="spotlightQuote">
+                    <h2 class="quoteHeading">Reimagine urban</h2>
+                    <p class="quote">"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo."</p> 
+                </div>
+            </div>
+            <div class="topics thesisTopics">
+                <div class="topic element1 selected">
+                    <div class="imageContainer">
+                        <img class="image" src="./resources/images/thesis-fisma.jpg" alt="">
+                    </div>
+                    <div class="textContainer">
+                        <h3 class="heading">Fisma: Design and Prototype</h3>
+                        <p class="date">Designer showcase of new prototype product</p>
+                    </div>
+                </div>
+                <div class="topic element2">
+                    <div class="imageContainer">
+                        <img class="image" src="./resources/images/thesis-now-and-then.jpg" alt="">
+                    </div>
+                    <div class="textContainer">
+                        <h3 class="heading">Now and then</h3>
+                        <p class="date">Research study about New York</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <footer>
+        <div>
+            <p class="copyright">&#169 Colar Academy. All rights reserved</p>
+        </div>
+            <ul class="lownav">
+                <li>Terms</li>
+                <li>Privacy</li>
+            </ul>
+    </footer>
 </body>
 </html>

@@ -5,9 +5,16 @@
     box-sizing: border-box;
 }
 
-nav {
+nav#desktop {
     display: flex;
     justify-content: space-between;
+    min-height: 64px;
+    align-items: center;
+}
+
+nav#mobile {
+    display: flex;
+    justify-content: space-evenly;
     min-height: 64px;
     align-items: center;
 }
@@ -167,4 +174,70 @@ div.courses {
 .courseElement img {
     height: auto;
     width: 100%;
+}
+
+div.thesis {
+    display: flex;
+}
+
+div.thesisTopics {
+    justify-content: flex-start;
+    margin-top: 32px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border-top: solid rgb(202, 202, 202) 1px;
+    color: grey;
+}
+
+footer li {
+    display: inline-block;
+    margin-left: 10px;
+}
+.thesisHeading {
+    width: 100%;
+    margin-top: 32px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 635px) {
+    nav#desktop {
+        display: none;
+    }
+    div.banner {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .banner img {
+        width: 100%;
+        margin: 0px;
+    }
+    div.information {
+        padding: 32px 16px;
+    }
+    div.spotlight {
+        display: none;
+    }
+    div.topics {
+        width: 100%;
+    }
+    div.topic {
+        flex-direction: column;
+    }
+    div.imageContainer {
+        width: 100%;
+    }
+    img.image {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 635px) {
+    nav#mobile {
+        display: none;
+    }
 }
