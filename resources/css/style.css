@@ -1,11 +1,15 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    height: 64px;
+    min-height: 64px;
+    align-items: center;
 }
 
 .nav li {
@@ -17,8 +21,9 @@ nav {
     margin-right: 24px;
 }
 
-.logo {
-    height: 32px;
+div.logo {
+    display: flex;
+    min-height: 32px;
     margin-left: 24px;
 }
 
@@ -37,15 +42,21 @@ nav {
 .information {
     width: 40%;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 button.button {
-    margin: auto;
     padding: 8px 0;
-    width: 60%;
+    width: 80%;
     background-color: rgb(73, 73, 73);
     color: white;
     border-style: none;
+}
+
+.information h2 {
+    margin-bottom: 20px;
+}
+
+.information p {
+    margin-bottom: 20px;
 }
